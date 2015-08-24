@@ -81,6 +81,10 @@ public:
      Singleton3(){ m_Test = 10; };
      int m_Test;
  };
+int GetSize(int data[])
+{
+	return sizeof(data);
+}
 int main(int argc,char* argv[])
 {
 	singleton1* singletonobj = singleton1::GetInstance();
